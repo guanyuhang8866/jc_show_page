@@ -1,0 +1,48 @@
+-
+  name: cityCode_dict #行政区划代码
+  url: http://172.16.11.36:8080/intelligent/getRegions
+-
+  name: models #市级模型列表
+  model_list: [13,22,32,33,35,61]
+-
+  name: baidu #百度api地址
+  url : http://api.map.baidu.com/geocoder/v2/?output=json&ak=584fa8af082f87b10783eab60748e804&
+-
+  name: code_to_does #行政区划查地址
+  url: http://172.16.4.63:8080/intelligent/show/getGeoRegions?code=
+-
+  name : sentiment #情感分析接口参数
+  Source : Source
+  SecretId : AKIDE3e88lh875a4tNG7sK4u4pldvoBDjYr5bhi6
+  SecretKey : A1J81Qh33X1JtuONhseyJJMfb8R8dzjWXK002TTc
+  url : http://service-af9dpy11-1255746258.ap-beijing.apigateway.myqcloud.com/release/sentimentanalysis
+
+-
+  name : caseType_dict #案件类型描述获取
+  url : http://172.16.4.63:8080/intelligent/caseType/getAllCaseType
+-
+  name : caseType #案件类型模型参数
+  Source: Source
+  SecretId: AKIDnCUfneKlZjp1ySGB982zenQNUVx14VJZtS4E
+  SecretKey: bWD3lmG2m54Bowolzk0k2ddNwpmaT95v4yujWGDs
+  url: http://service-d2yzm7af-1255746258.ap-beijing.apigateway.myqcloud.com/release/caseType
+
+-
+  name : region #行政区划模型参数
+  Source: Source
+  SecretId : AKIDAfPoRUb3ncTD20irayi9w1Mq6cx7d4GD7FuC
+  SecretKey : 8c001WTQ1R99eP28EB4QDRlHUUFfObBknT0e5Hi0
+  url_province : http://service-mt07y19h-1255746258.ap-beijing.apigateway.myqcloud.com/release/province
+  url_city : http://service-mt07y19h-1255746258.ap-beijing.apigateway.myqcloud.com/release/city
+-
+  name: recommendedindustries  #执法主题类型模型参数
+  Source: Source
+  SecretId: AKIDkgT8m86D79b3311ss16ddNor69o0u7oelio
+  SecretKey: JO7fkE8dEDk77MAVJT3U8xm6u9fa2naL0NQzeUjA
+  url: http://service-lf6kv351-1255746258.ap-beijing.apigateway.myqcloud.com/release/jc_ett_dict
+-
+  name : ner #命名实体识别模型参数
+  Source: Source
+  SecretId : AKID2oRvLNBBZjPdyGeOCc891szAHljCtVK4P95K
+  SecretKey : 7bEGG07eXJdB67gh4RJO3LCAtY1p2z3fViXl8bX4
+  url : http://service-1knl6hxh-1255746258.ap-beijing.apigateway.myqcloud.com/release/jc_ner
